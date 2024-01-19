@@ -10,9 +10,12 @@
         die("$res");
       }
       else{
+        $gg = mysqli_fetch_assoc($res);
         $_SESSION['logged-in'] = "true";
-        $_SESSION['user-data']['username'] = $name;
-        $_SESSION['user-data']['email'] = $email;
+        $_SESSION['user-data']['username'] = $gg['name'];
+        $_SESSION['user-data']['email'] = $gg['email'];
+        $_SESSION['user-data']['id'] = $gg['id'];
+        $_SESSION['user-data']['joinedAt'] = $gg['joinedAt'];
         header("location: index.php");
       }
     }
