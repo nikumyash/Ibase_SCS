@@ -5,8 +5,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 <nav class="bg-white border-gray-200 dark:bg-gray-900">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="https://flowbite.com/" class="flex absolute left-4 items-center space-x-3 rtl:space-x-reverse">
-      <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+  <a href="/index.php" class="flex absolute left-4 items-center space-x-3 rtl:space-x-reverse">
+      <img src="images/logo-removebg.png" class="h-8" alt="BuzzQuill logo" />
       <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SCS</span>
   </a>
     <div class="flex flex-1 items-center md:order-2 gap-8">

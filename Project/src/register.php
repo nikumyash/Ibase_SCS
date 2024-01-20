@@ -10,8 +10,9 @@
         die("$res");
       }
       else{
-        $gg = mysqli_fetch_assoc($res);
-        $_SESSION['logged-in'] = "true";
+        $g = mysqli_query($connection,"Select * from User where email='$email'");
+        $gg = mysqli_fetch_array($g);
+        $_SESSION['logged-in'] = true;
         $_SESSION['user-data']['username'] = $gg['name'];
         $_SESSION['user-data']['email'] = $gg['email'];
         $_SESSION['user-data']['id'] = $gg['id'];
