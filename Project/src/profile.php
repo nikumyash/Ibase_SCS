@@ -88,7 +88,7 @@
                 <div>
                     <?php 
                     require('config/dbconnect.php');
-                    $res = mysqli_query($connection,"SELECT * FROM Post as P LEFT JOIN User as B on B.id=P.author_id where P.author=".$_SESSION['user-data']['id']." order by P.createdAt DESC;");
+                    $res = mysqli_query($connection,"SELECT * FROM Post as P LEFT JOIN User as B on B.id=P.author_id where P.author_id=".$_SESSION['user-data']['id']." order by P.createdAt DESC;");
                     while($row = mysqli_fetch_array($res)){
                         echo('<div class="bg-[#0B1416] text-lg border-y-2 hover:border-none border-secondary hover:bg-secondary ease-in-out duration-200 hover:rounded-3xl overflow-hidden p-3 mt-5">
 
@@ -108,5 +108,6 @@
             </div>
             
         </div>
+        <?php require('shared/footer.php') ?>
 </body>
 </html>

@@ -5,7 +5,7 @@
       $name = $_POST['username'];
       $password = $_POST['password'];
       $email = $_POST['email'];
-      $res = mysqli_query($connection,"Insert into User(name,email,password) values ('$name','$password','$email')");
+      $res = mysqli_query($connection,"Insert into User(name,email,password) values ('$name','$email','$password')");
       if(!$res ){
         die("$res");
       }
